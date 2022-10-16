@@ -3,7 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace TaskBoardApp.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    using Entities;
+
+    public class ApplicationDbContext : IdentityDbContext<User>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
