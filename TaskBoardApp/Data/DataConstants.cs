@@ -16,5 +16,11 @@
             public const int MaxTaskDescription= 1000;
             public const int MinTaskDescription = 10;
         }
+
+        public class Board
+        {
+            public const int MaxBoardName = 30;
+            public const int MinBoardName = 3;
+        }
     }
 }
